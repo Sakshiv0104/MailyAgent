@@ -1,0 +1,216 @@
+{
+  "base_tables": {
+    "customers": {
+      "customer_id": "1",
+      "first_name": "James",
+      "last_name": "Smith",
+      "address": "123 Main St, Springfield, IL",
+      "email": "jsmith1@customer.com",
+      "phone_number": "555-190-3233"
+    },
+    "orders": {
+      "order_id": "7324",
+      "order_date": "2023-11-27",
+      "customer_id": "2160",
+      "total_price": "955.86"
+    },
+    "order_items": {
+      "order_item_id": "1.0",
+      "order_id": "6550.0",
+      "product_id": "1032.0",
+      "quantity": "1.0",
+      "price_at_purchase": "342.92"
+    },
+    "payment": {
+      "payment_id": "1",
+      "order_id": "1",
+      "payment_method": "Credit Card",
+      "amount": "232.15",
+      "transaction_status": "Completed"
+    },
+    "products": {
+      "product_id": "1",
+      "product_name": "Office Chair",
+      "category": "Furniture",
+      "price": "445.01",
+      "supplier_id": "501"
+    },
+    "reviews": {
+      "review_id": "1",
+      "product_id": "16",
+      "customer_id": "1516",
+      "rating": "4",
+      "review_text": "Customer service was excellent, product too.",
+      "review_date": "2024-03-03"
+    },
+    "shipments": {
+      "shipment_id": "1",
+      "order_id": "1",
+      "shipment_date": "2024-10-13",
+      "carrier": "UPS",
+      "tracking_number": "TRK344284",
+      "delivery_date": "2024-10-14",
+      "shipment_status": "Pending"
+    },
+    "suppliers": {
+      "supplier_id": "501",
+      "supplier_name": "Dynamic Systems Group",
+      "contact_name": "Donald Benjamin",
+      "address": "141 Shore Ln, Island City, MA",
+      "phone_number": "(555) 484-6922",
+      "email": "dbenjamin@supplier.com"
+    }
+  },
+  "view_source": {
+    "order_items_orders_master_view": [
+      "order_items",
+      "orders"
+    ],
+    "order_items_products_master_view": [
+      "order_items",
+      "products"
+    ],
+    "reviews_products_master_view": [
+      "reviews",
+      "products"
+    ],
+    "reviews_customers_master_view": [
+      "reviews",
+      "customers"
+    ],
+    "orders_customers_master_view": [
+      "orders",
+      "customers"
+    ],
+    "payment_orders_master_view": [
+      "payment",
+      "orders"
+    ],
+    "products_suppliers_master_view": [
+      "products",
+      "suppliers"
+    ],
+    "shipments_orders_master_view": [
+      "shipments",
+      "orders"
+    ]
+  },
+  "view_table_des": {
+    "order_items_orders_master_view": {
+      "order_items_order_item_id": "1",
+      "order_items_order_id": "6550",
+      "order_items_product_id": "1032",
+      "order_items_quantity": "1",
+      "order_items_price_at_purchase": "342.92",
+      "orders_order_id": "6550",
+      "orders_order_date": "2024-09-18",
+      "orders_customer_id": "2434",
+      "orders_total_price": "419.09"
+    },
+    "order_items_products_master_view": {
+      "order_items_order_item_id": "1",
+      "order_items_order_id": "6550",
+      "order_items_product_id": "1032",
+      "order_items_quantity": "1",
+      "order_items_price_at_purchase": "342.92",
+      "products_product_id": "1032",
+      "products_product_name": "Storage Shelf",
+      "products_category": "Furniture",
+      "products_price": "680.43",
+      "products_supplier_id": "532"
+    },
+    "reviews_products_master_view": {
+      "reviews_review_id": "1",
+      "reviews_product_id": "16",
+      "reviews_customer_id": "1516",
+      "reviews_rating": "4",
+      "reviews_review_text": "Customer service was excellent, product too.",
+      "reviews_review_date": "2024-03-03",
+      "products_product_id": "16",
+      "products_product_name": "Mechanical Keyboard",
+      "products_category": "Electronics",
+      "products_price": "931.97",
+      "products_supplier_id": "516"
+    },
+    "reviews_customers_master_view": {
+      "reviews_review_id": "1",
+      "reviews_product_id": "16",
+      "reviews_customer_id": "1516",
+      "reviews_rating": "4",
+      "reviews_review_text": "Customer service was excellent, product too.",
+      "reviews_review_date": "2024-03-03",
+      "customers_customer_id": "1516",
+      "customers_first_name": "James",
+      "customers_last_name": "Sophia",
+      "customers_address": "232 River St, Crystal Lake, IN",
+      "customers_email": "jsophia1516@customer.com",
+      "customers_phone_number": "555-703-8716"
+    },
+    "orders_customers_master_view": {
+      "orders_order_id": "1",
+      "orders_order_date": "2024-10-10",
+      "orders_customer_id": "8002",
+      "orders_total_price": "165.18",
+      "customers_customer_id": "8002",
+      "customers_first_name": "Mary",
+      "customers_last_name": "Victoria",
+      "customers_address": "949 Port Ave, Sound View, MP",
+      "customers_email": "mvictoria8002@customer.com",
+      "customers_phone_number": "555-703-1044"
+    },
+    "payment_orders_master_view": {
+      "payment_payment_id": "1",
+      "payment_order_id": "1",
+      "payment_payment_method": "Credit Card",
+      "payment_amount": "232.15",
+      "payment_transaction_status": "Completed",
+      "orders_order_id": "1",
+      "orders_order_date": "2024-10-10",
+      "orders_customer_id": "8002",
+      "orders_total_price": "165.18"
+    },
+    "products_suppliers_master_view": {
+      "products_product_id": "1",
+      "products_product_name": "Office Chair",
+      "products_category": "Furniture",
+      "products_price": "445.01",
+      "products_supplier_id": "501",
+      "suppliers_supplier_id": "501",
+      "suppliers_supplier_name": "Dynamic Systems Group",
+      "suppliers_contact_name": "Donald Benjamin",
+      "suppliers_address": "141 Shore Ln, Island City, MA",
+      "suppliers_phone_number": "(555) 484-6922",
+      "suppliers_email": "dbenjamin@supplier.com"
+    },
+    "shipments_orders_master_view": {
+      "shipments_shipment_id": "1",
+      "shipments_order_id": "1",
+      "shipments_shipment_date": "2024-10-13",
+      "shipments_carrier": "UPS",
+      "shipments_tracking_number": "TRK344284",
+      "shipments_delivery_date": "2024-10-14",
+      "shipments_shipment_status": "Pending",
+      "orders_order_id": "1",
+      "orders_order_date": "2024-10-10",
+      "orders_customer_id": "8002",
+      "orders_total_price": "165.18"
+    }
+  },
+  "maily": {
+    "maily__customer_email": {
+      "source_table": "customers",
+      "entity_type": "customer",
+      "id_col": "customer_id",
+      "name_col": "first_name last_name",
+      "email_col": "email"
+    },
+    "maily__supplier_email": {
+      "source_table": "suppliers",
+      "entity_type": "supplier",
+      "id_col": "supplier_id",
+      "name_col": "supplier_name",
+      "email_col": "email"
+    }
+  },
+  "db_description": "I currently hold a database of information about our customers, products, and suppliers. This database includes details such as customer contact information, order history, product descriptions, and supplier details, making it easier for us to manage and communicate with our customers and partners."
+}
