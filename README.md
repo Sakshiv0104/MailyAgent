@@ -4,7 +4,7 @@
 
 Maily is an autonomous, graph-based AI agent designed to act as an intelligent communications layer over any relational database. Point Maily at a raw folder of CSVs, and she automatically builds a relational SQLite database, identifies human entities (Customers, Suppliers, Employees), maps their contact information, and provides a contextual, Human-in-the-Loop interface for drafting and sending emails.
 
-Built with **LangGraph**, **Streamlit**, and the ultra-low latency **Cerebras LLM**, Maily doesn't just generate text—she understands database relationships, recalls past email history, and knows exactly when to pause and ask the user for clarification.
+Built with **LangGraph**, **Streamlit**, and the ultra-low latency **Cerebras LLM**, Maily doesn't just generate text, she understands database relationships, recalls past email history, and knows exactly when to pause and ask the user for clarification.
 
 ---
 
