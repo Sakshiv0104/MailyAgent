@@ -6,6 +6,16 @@ Maily is an autonomous, graph-based AI agent designed to act as an intelligent c
 
 Built with **LangGraph**, **Streamlit**, and the ultra-low latency **Cerebras LLM**, Maily doesn't just generate text, she understands database relationships, recalls past email history, and knows exactly when to pause and ask the user for clarification.
 
+## ✨ The Maily Experience (Key Features)
+
+I designed Maily to require the absolute minimum amount of human effort while providing maximum control. Here is exactly what happens when you launch the app:
+
+* **1. Dynamic Dashboard:** When you open Maily, she has already scanned your database. The home screen automatically generates buttons *only* for categories that have email addresses (e.g., "Connect with Supplier", "Connect with Customer").
+* **2. Instant Context & History:** When you select a person, Maily pulls up your entire past email history with them on the side of the screen. You never have to guess what was said last time.
+* **3. "Lazy" Prompting:** You don't need to write a whole email. Just type a tiny prompt like *"ask about the invoice"* or *"tell them the delivery is late"*.
+* **4. Smart Clarification (Human-in-the-Loop):** If your prompt is too vague, Maily won't guess. She will stop and ask you: *"Wait, which invoice number?"* You just type the answer, and she resumes drafting.
+* **5. Total Editing Control:** Once Maily generates the professional draft, you aren't forced to send it. You can edit the text, change the subject line, or click **Discard & Restart** to completely rewrite it.
+* **6. Attachments & Branding:** Before hitting send, you can easily upload files. Maily's complex backend handles the MIME encoding, attaching your files while perfectly sandwiching an inline AgentMaily logo and signature into the HTML body.
 ---
 
 ## The Problem Maily Solves
