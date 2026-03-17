@@ -1,6 +1,6 @@
 # ✉️ Maily: Autonomous CRM & Context-Aware Communications Agent
 
-![Maily UI Preview](./pictures/AgentMaily.png) *(Note: Replace this path with a screenshot of your dark-blue Streamlit UI!)*
+![Maily UI Preview](./pictures/AgentMaily.png)
 
 Maily is an autonomous, graph-based AI agent designed to act as an intelligent communications layer over any relational database. Point Maily at a raw folder of CSVs, and she automatically builds a relational SQLite database, identifies human entities (Customers, Suppliers, Employees), maps their contact information, and provides a contextual, Human-in-the-Loop interface for drafting and sending emails.
 
